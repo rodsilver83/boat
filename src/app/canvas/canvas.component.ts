@@ -85,13 +85,13 @@ export class CanvasComponent implements AfterViewInit, OnDestroy {
     this.shipComputed.left += 1;
     this.shipComputed.top = y1;
 
-    if (this.shipComputed.left > this.screenWidth + 20) {
+    if (this.shipComputed.left > this.screenWidth + 100) {
       this.shipComputed.left = -10;
     }
 
     this.angle = `rotate(${-Math.atan(y1 - y2)}rad)`;
     this.left = this.shipComputed.left - (this.screenWidth * this.shipComputed.widthScreenWidthPercent / 2) + 'px';
-    this.top = this.shipComputed.top - 50 + 'px';
+    this.top = this.shipComputed.top - 55 + 'px';
   }
 
   moveWaves() {
