@@ -1,0 +1,36 @@
+
+canvas {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #29b9e9, transparent);
+}
+
+main {
+  background-color: red;
+}
+
+.grey {
+  fill: #E6E6E6;
+}
+
+.red {
+  fill: rgb(255, 28, 28);
+}
+
+.orange {
+  fill: rgb(255, 125, 38);
+}
+
+.black {
+  fill: rgb(50,50,50);
+}
+
+#boat {
+  width: 70px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
