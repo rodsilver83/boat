@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<svg id=\"boat\" viewBox=\"0 0 400 400\">\n  <g>\n    <rect class=\"black\" x=\"200\" y=\"50\" width=\"10\" height=\"210\"/>\n    <rect class=\"black\" x=\"180\" y=\"100\" width=\"10\" height=\"160\"/>\n    <polygon class=\"orange\" points=\"220,60 350,220 220,250\"/>\n    <polygon class=\"red\" points=\"170,120 100,220 170,250\"/>\n    <polygon class=\"grey\" points=\"50,260 390,260 350,330 90,330\"/>\n    <polygon class=\"orange\" points=\"50,260 390,260 385,270 55,270\"/>\n  </g>\n</svg>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<svg id=\"boat\" viewBox=\"0 0 400 400\"\n  [style.transform]=\"transform\"\n  [style.left]=\"left\"\n  [style.top]=\"top\">\n  <g>\n    <rect class=\"black\" x=\"200\" y=\"50\" width=\"10\" height=\"210\"/>\n    <rect class=\"black\" x=\"180\" y=\"100\" width=\"10\" height=\"160\"/>\n    <polygon [attr.fill]=\"color2\" points=\"220,60 350,220 220,250\"/>\n    <polygon [attr.fill]=\"color1\" points=\"170,120 100,220 170,250\"/>\n    <polygon class=\"grey\" points=\"50,260 390,260 350,330 90,330\"/>\n    <polygon [attr.fill]=\"color2\" points=\"50,260 390,260 385,270 55,270\"/>\n  </g>\n</svg>\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<main #main>\n  <svg id=\"boat\" viewBox=\"0 0 400 400\"\n    [style.transform]=\"angle\"\n    [style.top]=\"top\"\n    [style.left]=\"left\">\n    <g>\n      <rect class=\"black\" x=\"200\" y=\"50\" width=\"10\" height=\"210\" />\n        <rect class=\"black\" x=\"180\" y=\"100\" width=\"10\" height=\"160\" />\n          <polygon class=\"orange\" points=\"220,60 350,220 220,250\" />\n            <polygon class=\"red\" points=\"170,120 100,220 170,250\" />\n              <polygon class=\"grey\" points=\"50,260 390,260 350,330 90,330\" />\n                <polygon class=\"orange\" points=\"50,260 390,260 385,270 55,270\"\n                  />\n                </g>\n              </svg>\n            </main>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<main #main>\n  <app-boat\n    [scale]=\"boatPosition1.scale\"\n    [color1]=\"boatPosition1.color1\"\n    [color2]=\"boatPosition1.color2\"\n    [angle]=\"boatPosition1.angle\"\n    [left]=\"boatPosition1.left\"\n    [top]=\"boatPosition1.top\">\n  </app-boat>\n  <app-boat\n    [scale]=\"boatPosition2.scale\"\n    [color1]=\"boatPosition2.color1\"\n    [color2]=\"boatPosition2.color2\"\n    [angle]=\"boatPosition2.angle\"\n    [left]=\"boatPosition2.left\"\n    [top]=\"boatPosition2.top\">\n  </app-boat>\n</main>\n");
 
 /***/ }),
 
@@ -405,7 +405,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".grey {\n  fill: #E6E6E6;\n}\n\n.red {\n  fill: #ff1c1c;\n}\n\n.orange {\n  fill: #ff7d26;\n}\n\n.black {\n  fill: #323232;\n}\n\n#boat {\n  width: 70px;\n  height: auto;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yb2RyaWdvL0NvZGUvY29sb3ItZ3JpZC9zcmMvYXBwL2JvYXQvYm9hdC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYm9hdC9ib2F0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0FDQ0YiLCJmaWxlIjoic3JjL2FwcC9ib2F0L2JvYXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZ3JleSB7XG4gIGZpbGw6ICNFNkU2RTY7XG59XG5cbi5yZWQge1xuICBmaWxsOiByZ2IoMjU1LCAyOCwgMjgpO1xufVxuXG4ub3JhbmdlIHtcbiAgZmlsbDogcmdiKDI1NSwgMTI1LCAzOCk7XG59XG5cbi5ibGFjayB7XG4gIGZpbGw6IHJnYig1MCw1MCw1MCk7XG59XG5cbiNib2F0IHtcbiAgd2lkdGg6IDcwcHg7XG4gIGhlaWdodDogYXV0bztcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG59IiwiLmdyZXkge1xuICBmaWxsOiAjRTZFNkU2O1xufVxuXG4ucmVkIHtcbiAgZmlsbDogI2ZmMWMxYztcbn1cblxuLm9yYW5nZSB7XG4gIGZpbGw6ICNmZjdkMjY7XG59XG5cbi5ibGFjayB7XG4gIGZpbGw6ICMzMjMyMzI7XG59XG5cbiNib2F0IHtcbiAgd2lkdGg6IDcwcHg7XG4gIGhlaWdodDogYXV0bztcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".grey {\n  fill: #E6E6E6;\n}\n\n.black {\n  fill: #323232;\n}\n\n#boat {\n  width: 70px;\n  height: auto;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yb2RyaWdvL0NvZGUvY29sb3ItZ3JpZC9zcmMvYXBwL2JvYXQvYm9hdC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYm9hdC9ib2F0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0FDQ0YiLCJmaWxlIjoic3JjL2FwcC9ib2F0L2JvYXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZ3JleSB7XG4gIGZpbGw6ICNFNkU2RTY7XG59XG5cbi5ibGFjayB7XG4gIGZpbGw6IHJnYig1MCw1MCw1MCk7XG59XG5cbiNib2F0IHtcbiAgd2lkdGg6IDcwcHg7XG4gIGhlaWdodDogYXV0bztcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG59IiwiLmdyZXkge1xuICBmaWxsOiAjRTZFNkU2O1xufVxuXG4uYmxhY2sge1xuICBmaWxsOiAjMzIzMjMyO1xufVxuXG4jYm9hdCB7XG4gIHdpZHRoOiA3MHB4O1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -421,19 +421,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BoatComponent", function() { return BoatComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+
 
 
 let BoatComponent = class BoatComponent {
-    constructor() {
-        this.styledBoat = {};
+    constructor(sanitazer) {
+        this.sanitazer = sanitazer;
+        this.scale = 1;
+    }
+    get transform() {
+        return this.sanitazer.bypassSecurityTrustStyle(`${this.angle} scale(${this.scale})`);
     }
     ngOnChanges(change) {
-        console.log(change);
     }
 };
+BoatComponent.ctorParameters = () => [
+    { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"] }
+];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
-], BoatComponent.prototype, "styledBoat", void 0);
+], BoatComponent.prototype, "angle", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], BoatComponent.prototype, "left", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], BoatComponent.prototype, "top", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], BoatComponent.prototype, "color1", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], BoatComponent.prototype, "color2", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], BoatComponent.prototype, "scale", void 0);
 BoatComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-boat',
@@ -442,6 +465,38 @@ BoatComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     })
 ], BoatComponent);
 
+
+
+/***/ }),
+
+/***/ "./src/app/boat/boat.ts":
+/*!******************************!*\
+  !*** ./src/app/boat/boat.ts ***!
+  \******************************/
+/*! exports provided: Boat */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Boat", function() { return Boat; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class Boat {
+    constructor(fields) {
+        this.angle = '0';
+        this.top = '0';
+        this.left = '0';
+        this.position = 0;
+        this.velocity = 1;
+        this.color1 = 'black';
+        this.color2 = 'red';
+        this.deepLevel = 0;
+        this.scale = 1;
+        if (fields) {
+            Object.assign(this, fields);
+        }
+    }
+}
 
 
 /***/ }),
@@ -455,7 +510,7 @@ BoatComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("canvas {\n  position: absolute;\n  display: block;\n  width: 100vw;\n  height: 100vh;\n  background: linear-gradient(180deg, #29b9e9, transparent);\n}\n\nmain {\n  background-color: red;\n}\n\n.grey {\n  fill: #E6E6E6;\n}\n\n.red {\n  fill: #ff1c1c;\n}\n\n.orange {\n  fill: #ff7d26;\n}\n\n.black {\n  fill: #323232;\n}\n\n#boat {\n  width: 70px;\n  height: auto;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yb2RyaWdvL0NvZGUvY29sb3ItZ3JpZC9zcmMvYXBwL2NhbnZhcy9jYW52YXMuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NhbnZhcy9jYW52YXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxrQkFBQTtFQUNBLGNBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHlEQUFBO0FDQUY7O0FER0E7RUFDRSxxQkFBQTtBQ0FGOztBREdBO0VBQ0UsYUFBQTtBQ0FGOztBREdBO0VBQ0UsYUFBQTtBQ0FGOztBREdBO0VBQ0UsYUFBQTtBQ0FGOztBREdBO0VBQ0UsYUFBQTtBQ0FGOztBREdBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0FDQUYiLCJmaWxlIjoic3JjL2FwcC9jYW52YXMvY2FudmFzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG5jYW52YXMge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxODBkZWcsICMyOWI5ZTksIHRyYW5zcGFyZW50KTtcbn1cblxubWFpbiB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbn1cblxuLmdyZXkge1xuICBmaWxsOiAjRTZFNkU2O1xufVxuXG4ucmVkIHtcbiAgZmlsbDogcmdiKDI1NSwgMjgsIDI4KTtcbn1cblxuLm9yYW5nZSB7XG4gIGZpbGw6IHJnYigyNTUsIDEyNSwgMzgpO1xufVxuXG4uYmxhY2sge1xuICBmaWxsOiByZ2IoNTAsNTAsNTApO1xufVxuXG4jYm9hdCB7XG4gIHdpZHRoOiA3MHB4O1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xufSIsImNhbnZhcyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDE4MGRlZywgIzI5YjllOSwgdHJhbnNwYXJlbnQpO1xufVxuXG5tYWluIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmVkO1xufVxuXG4uZ3JleSB7XG4gIGZpbGw6ICNFNkU2RTY7XG59XG5cbi5yZWQge1xuICBmaWxsOiAjZmYxYzFjO1xufVxuXG4ub3JhbmdlIHtcbiAgZmlsbDogI2ZmN2QyNjtcbn1cblxuLmJsYWNrIHtcbiAgZmlsbDogIzMyMzIzMjtcbn1cblxuI2JvYXQge1xuICB3aWR0aDogNzBweDtcbiAgaGVpZ2h0OiBhdXRvO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("canvas {\n  position: absolute;\n  display: block;\n  width: 100vw;\n  height: 100vh;\n  background: linear-gradient(to bottom, #29b9e9, #fff6c8 40%);\n}\n\nmain {\n  background-color: red;\n}\n\n.grey {\n  fill: #E6E6E6;\n}\n\n.red {\n  fill: #ff1c1c;\n}\n\n.orange {\n  fill: #ff7d26;\n}\n\n.black {\n  fill: #323232;\n}\n\n#boat {\n  width: 70px;\n  height: auto;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yb2RyaWdvL0NvZGUvY29sb3ItZ3JpZC9zcmMvYXBwL2NhbnZhcy9jYW52YXMuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NhbnZhcy9jYW52YXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxrQkFBQTtFQUNBLGNBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLDREQUFBO0FDQUY7O0FER0E7RUFDRSxxQkFBQTtBQ0FGOztBREdBO0VBQ0UsYUFBQTtBQ0FGOztBREdBO0VBQ0UsYUFBQTtBQ0FGOztBREdBO0VBQ0UsYUFBQTtBQ0FGOztBREdBO0VBQ0UsYUFBQTtBQ0FGOztBREdBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0FDQUYiLCJmaWxlIjoic3JjL2FwcC9jYW52YXMvY2FudmFzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG5jYW52YXMge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCh0byBib3R0b20sICMyOWI5ZTksICNmZmY2YzggNDAlKTtcbn1cblxubWFpbiB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbn1cblxuLmdyZXkge1xuICBmaWxsOiAjRTZFNkU2O1xufVxuXG4ucmVkIHtcbiAgZmlsbDogcmdiKDI1NSwgMjgsIDI4KTtcbn1cblxuLm9yYW5nZSB7XG4gIGZpbGw6IHJnYigyNTUsIDEyNSwgMzgpO1xufVxuXG4uYmxhY2sge1xuICBmaWxsOiByZ2IoNTAsNTAsNTApO1xufVxuXG4jYm9hdCB7XG4gIHdpZHRoOiA3MHB4O1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xufSIsImNhbnZhcyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgIzI5YjllOSwgI2ZmZjZjOCA0MCUpO1xufVxuXG5tYWluIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmVkO1xufVxuXG4uZ3JleSB7XG4gIGZpbGw6ICNFNkU2RTY7XG59XG5cbi5yZWQge1xuICBmaWxsOiAjZmYxYzFjO1xufVxuXG4ub3JhbmdlIHtcbiAgZmlsbDogI2ZmN2QyNjtcbn1cblxuLmJsYWNrIHtcbiAgZmlsbDogIzMyMzIzMjtcbn1cblxuI2JvYXQge1xuICB3aWR0aDogNzBweDtcbiAgaGVpZ2h0OiBhdXRvO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbn0iXX0= */");
 
 /***/ }),
 
@@ -471,6 +526,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CanvasComponent", function() { return CanvasComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _boat_boat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../boat/boat */ "./src/app/boat/boat.ts");
+
 
 
 let CanvasComponent = class CanvasComponent {
@@ -483,65 +540,86 @@ let CanvasComponent = class CanvasComponent {
         this.wave3 = [];
         this.screenWidth = 0;
         this.screenHeight = 0;
-        this.numWaves = 3;
-        this.wavesSize = 2;
+        this.numWaves = 7;
+        this.wavesSize = 5;
         this.moveWavesId = null;
         this.moveBoatId = null;
-        this.shipComputed = {
-            angle: '0',
-            top: 0,
-            left: 0,
-            widthScreenWidthPercent: 0.07,
-        };
-        this.angle = '0';
-        this.left = '0';
-        this.top = '0';
+        this.drawId = null;
+        this.horizonHeight = 0;
+        this.boatPosition1 = new _boat_boat__WEBPACK_IMPORTED_MODULE_2__["Boat"]({
+            position: 200,
+            color1: '#ff195a',
+            color2: '#cf091a',
+            velocity: 0.3,
+            deepLevel: 10,
+            scale: 0.6
+        });
+        this.boatPosition2 = new _boat_boat__WEBPACK_IMPORTED_MODULE_2__["Boat"]({
+            position: 20,
+            color1: '#5422ed',
+            color2: '#1402ad',
+            velocity: 0.5,
+            deepLevel: 100,
+            scale: 1
+        });
+    }
+    onResize(event) {
+        this.initSizes();
+        this.initWaves();
     }
     ngAfterViewInit() {
         this.initCanvas();
+        this.initSizes();
         this.initWaves();
-        requestAnimationFrame(() => { this.draw(); });
         this.startLoop();
     }
     initCanvas() {
         this.canvasElement = document.createElement('canvas');
         this.ctx = this.canvasElement.getContext('2d');
         this.main.nativeElement.insertBefore(this.canvasElement, this.main.nativeElement.firstChild);
+    }
+    initSizes() {
         this.screenHeight = window.innerHeight;
         this.screenWidth = window.innerWidth;
         this.canvasElement.width = this.screenWidth;
         this.canvasElement.height = this.screenHeight;
-        this.shipComputed = {
-            angle: '0',
-            top: 0,
-            left: 0,
-            widthScreenWidthPercent: 0.07,
-        };
+        this.numWaves = Math.floor(this.screenWidth / 200);
+        this.wavesSize = Math.floor(this.screenHeight / 300);
+        this.horizonHeight = this.screenHeight * .3;
     }
     initWaves() {
         const num = this.numWaves;
         const size = this.wavesSize;
         for (let x = 0; x < this.screenWidth; x++) {
-            const s1 = (x + 40) * num / this.screenWidth * 2 * Math.PI;
-            const s2 = (x + 20) * (num - 1) / this.screenWidth * 2 * Math.PI;
-            const s3 = (x + 10) * (num + 1) / this.screenWidth * 2 * Math.PI;
+            const s1 = (x) * num / this.screenWidth * 2 * Math.PI;
+            const s2 = (x + 200) * (num - 1) / this.screenWidth * 2 * Math.PI;
+            const s3 = (x + 100) * (num + 1) / this.screenWidth * 2 * Math.PI;
             this.wave1[x] = Math.sin(s1);
             this.wave2[x] = Math.sin(s2);
             this.wave3[x] = Math.sin(s3);
-            this.waves[x] = ((this.wave1[x] + this.wave2[x] + this.wave3[x]) * size) + this.screenHeight / 2;
+            this.waves[x] = ((this.wave1[x] + this.wave2[x] + this.wave3[x]) * size) + this.horizonHeight;
         }
+        requestAnimationFrame(() => { this.draw(); });
     }
-    moveBoat() {
-        const y1 = this.waves[this.shipComputed.left];
-        const y2 = this.waves[this.shipComputed.left + 1];
-        this.shipComputed.left += 1;
-        this.shipComputed.top = y1;
-        if (this.shipComputed.left > this.screenWidth + 100) {
-            this.shipComputed.left = -10;
+    moveBoat(boatPosition) {
+        let y1 = this.waves[Math.floor(boatPosition.position)];
+        let y2 = this.waves[Math.floor(boatPosition.position) + 1];
+        boatPosition.position += boatPosition.velocity;
+        const newPos = Math.floor(boatPosition.position);
+        if (newPos > this.screenWidth + 50) {
+            boatPosition.position = -50;
         }
-        this.angle = `rotate(${-Math.atan(y1 - y2)}rad)`;
-        this.left = this.shipComputed.left - (this.screenWidth * this.shipComputed.widthScreenWidthPercent / 2) + 'px';
-        this.top = this.shipComputed.top - 55 + 'px';
+        if (boatPosition.position >= this.screenWidth) {
+            y1 = this.waves[newPos - this.screenWidth];
+            y2 = this.waves[newPos - this.screenWidth + 1];
+        }
+        if (boatPosition.position < 0) {
+            y1 = this.waves[this.screenWidth + newPos];
+            y2 = this.waves[this.screenWidth + newPos + 1];
+        }
+        boatPosition.angle = `rotate(${-Math.atan(y1 - y2)}rad)`;
+        boatPosition.left = newPos - 40 + 'px'; // adjust the center of the boat
+        boatPosition.top = y1 - 55 + boatPosition.deepLevel + 'px'; // adjust the center of the boat
     }
     moveWaves() {
         const num = this.numWaves;
@@ -557,14 +635,23 @@ let CanvasComponent = class CanvasComponent {
                 this.wave2[x] = this.wave2[x + 1];
                 this.wave3[x] = this.wave3[x + 1];
             }
-            this.waves[x] = ((this.wave1[x] + this.wave2[x] + this.wave3[x]) * size) + this.screenHeight / 2;
+            this.waves[x] = ((this.wave1[x] + this.wave2[x] + this.wave3[x]) * size) + this.horizonHeight;
         }
     }
     startLoop() {
         clearInterval(this.moveWavesId);
-        this.moveWavesId = setInterval(() => { this.moveWaves(); }, 15);
+        this.moveWavesId = setInterval(() => {
+            this.moveWaves();
+        }, 15);
         clearInterval(this.moveBoatId);
-        this.moveBoatId = setInterval(() => { this.moveBoat(); }, 25);
+        this.moveBoatId = setInterval(() => {
+            this.moveBoat(this.boatPosition1);
+            this.moveBoat(this.boatPosition2);
+        }, 10);
+        clearInterval(this.drawId);
+        this.drawId = setInterval(() => {
+            requestAnimationFrame(() => { this.draw(); });
+        }, 100);
     }
     draw() {
         this.ctx.clearRect(0, 0, this.screenWidth, this.screenHeight);
@@ -579,11 +666,11 @@ let CanvasComponent = class CanvasComponent {
         this.ctx.fillStyle = gradient;
         this.ctx.lineTo(this.screenWidth, this.screenHeight);
         this.ctx.fill();
-        requestAnimationFrame(() => { this.draw(); });
     }
     ngOnDestroy() {
         clearInterval(this.moveWavesId);
         clearInterval(this.moveBoatId);
+        clearInterval(this.drawId);
     }
 };
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -592,6 +679,9 @@ tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('boat', { static: false })
 ], CanvasComponent.prototype, "boat", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:resize', ['$event'])
+], CanvasComponent.prototype, "onResize", null);
 CanvasComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-canvas',
