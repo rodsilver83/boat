@@ -971,8 +971,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.wave3 = [];
         this.screenWidth = 0;
         this.screenHeight = 0;
-        this.numWaves = 8;
-        this.wavesSize = 4;
+        this.numWaves = 3;
+        this.wavesSize = 2;
         this.moveWavesId = null;
         this.moveBoatId = null;
         this.shipComputed = {
